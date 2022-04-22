@@ -46,8 +46,8 @@ router.get("/mul/:a/:b", async function (req, res) {
     const result = a * b;
 
     await Operation.create({
-        type: "RES",
-        args: {
+        type: "MUL",
+        args: { 
             a: a,
             b: b,
         },
